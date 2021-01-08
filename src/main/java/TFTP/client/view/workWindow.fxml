@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane layoutY="100.0" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Button fx:id="BSend" layoutX="484.0" layoutY="64.0" mnemonicParsing="false" style="-fx-background-color: #2E3348;" text="Отправить" textFill="#fefefe">
+                    <font>
+                        <Font name="Sitka Small" size="14.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <TextField fx:id="TFPathClient" layoutX="435.0" layoutY="115.0" promptText="Файл" style="-fx-background-color: #fafafa; -fx-border-color: #2E3348;" />
+            <TextField fx:id="TFPathServer" layoutX="435.0" layoutY="176.0" promptText="Путь на сервере" style="-fx-background-color: #fafafa; -fx-border-color: #2E3348;" />
+            <Button fx:id="BGive" layoutX="487.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #2E3348;" text="Вытянуть" textFill="#fefefe">
+               <font>
+                  <Font name="Sitka Small" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <VBox fx:id="FileAndDir" layoutX="14.0" layoutY="15.0" prefHeight="275.0" prefWidth="330.0" />
+            </children>
+        </AnchorPane>
+        <Label fx:id="LIp" alignment="CENTER" layoutX="-1.0" layoutY="26.0" prefHeight="56.0" prefWidth="600.0" text="Localhost" textFill="#fafafa">
+            <font>
+                <Font name="Sitka Small" size="48.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

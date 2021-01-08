@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TFTP.client.modelView.MainController">
+   <children>
+      <AnchorPane layoutY="100.0" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Button fx:id="BConnect" layoutX="236.0" layoutY="238.0" maxHeight="27.0" maxWidth="131.0" minHeight="27.0" minWidth="131.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="131.0" style="-fx-background-color: #2E3348;" text="Подключиться" textAlignment="CENTER" textFill="#fefefe">
+               <font>
+                  <Font name="Sitka Small" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="TFLog" layoutX="226.0" layoutY="84.0" promptText="Логин" style="-fx-background-color: #fafafa; -fx-border-color: #2E3348;" />
+            <PasswordField fx:id="TFPas" layoutX="226.0" layoutY="138.0" promptText="Пароль" style="-fx-background-color: #fafafa; -fx-border-color: #2E3348;" />
+            <Label fx:id="LStatus" layoutY="6.0" prefHeight="17.0" prefWidth="600.0" text="Ожидание" textFill="#2e3348">
+               <font>
+                  <Font name="Sitka Small" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="BRegistr" layoutX="412.0" layoutY="15.0" maxHeight="27.0" maxWidth="174.0" minHeight="27.0" minWidth="131.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="174.0" style="-fx-background-color: #2E3348;" text="Зарегистрироваться" textAlignment="CENTER" textFill="#fefefe">
+               <font>
+                  <Font name="Sitka Small" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="238.0" layoutY="27.0" text="TFTP" textFill="#fafafa">
+         <font>
+            <Font name="Sitka Small" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="BSettings" fitHeight="27.0" fitWidth="31.0" layoutX="559.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Subj/texture/Settings.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
